@@ -1,11 +1,15 @@
   .btn-freiya {
-    background-color: #7cbdbc;
+    background-color: transparent;
   }
 
   .btn-freiya:hover {
-    background-color: #5f9493;
+    background-color: rgba(0, 0, 0, 50);
   }
 
   .nav-freiya {
-    background-color: #7cbdbc;
+    background-color: transparent;
+}
+
+.fly {
+  position: absolute;
 }

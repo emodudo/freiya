@@ -1,7 +1,6 @@
 .hero-section {
     position: relative;
     overflow: hidden;
-    padding-top: 80px;
     height: calc(100vh - 51px);
   }
   
@@ -55,8 +54,8 @@
   object-fit: cover;
   background-size: cover;
   background-position: center;
-  filter: blur(8px);
-  -webkit-filter: blur(8px);
+  filter: blur(5px);
+  -webkit-filter: blur(5px);
 }
 
 .custom-video.active {
@@ -68,6 +67,6 @@
 }
 
 .titulo {
-    font-size: 300px;
-    text-shadow: #000000 2px 5px;
+    font-size: 280px;
+    text-shadow: #000000 5px 5px;
 }
