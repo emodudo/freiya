@@ -1,3 +1,11 @@
+@media (max-width: 991.98px) {
+  .navbar-toggler {
+      position: fixed;
+      right: 15px;
+      top: 27px;
+      z-index: 1030; 
+  }
+}
 .btn-freiya {
   color: white;
   background-color: transparent; 

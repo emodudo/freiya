@@ -1,3 +1,9 @@
+
+.titulo {
+  font-size: 280px;
+  text-shadow: #000000 5px 5px;
+}
+
 .hero-section {
   position: relative;
   overflow: hidden;
@@ -26,46 +32,52 @@
 }
 
 .video-wrap {
-z-index: -100;
-overflow: hidden;
-width: 100%;
-height: 100vh;
+  z-index: -100;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
 }
 
 .background-overlay {
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: black;
-z-index: -99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -99;
 }
 
 .custom-video {
-position: absolute;
-top: 0%;
-left: -6%;
-width: 110%;
-height: 110%;
-object-fit: cover;
-background-size: cover;
-background-position: center;
-transition: opacity 1s ease-in-out;
-opacity: 0;
-filter: blur(4px);
--webkit-filter: blur(4px);
+  position: absolute;
+  top: 0%;
+  left: -6%;
+  width: 110%;
+  height: 110%;
+  object-fit: cover;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
 }
 
 .custom-video.active {
-opacity: 1;
+  opacity: 1;
 }
 
 .custom-video.first-active {
-opacity: 1;
+  opacity: 1;
+}
+@media (max-width: 992px) {
+  .titulo {
+    font-size: 150px;
+  }
 }
 
-.titulo {
-  font-size: 280px;
-  text-shadow: #000000 5px 5px;
+@media (max-width: 576px) {
+  .titulo {
+    font-size: 100px;
+  }
 }

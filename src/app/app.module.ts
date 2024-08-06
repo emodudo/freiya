@@ -8,6 +8,7 @@ import { HeroComponent } from './hero/hero.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { StreamComponent } from './stream/stream.component';
 import { VideosComponent } from './videos/videos.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { VideosComponent } from './videos/videos.component';
     HeroComponent,
     SobreComponent,
     StreamComponent,
-    VideosComponent
+    VideosComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
