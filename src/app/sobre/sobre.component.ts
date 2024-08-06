@@ -19,27 +19,19 @@ export class SobreComponent implements OnInit {
   }
 
   checkScroll(): void {
-    const elements = document.querySelectorAll('.animated-text');
-    elements.forEach(element => {
+    const textElements = document.querySelectorAll('.animated-text');
+    textElements.forEach(element => {
       const position = element.getBoundingClientRect();
       if (position.top >= 0 && position.bottom <= window.innerHeight) {
         element.classList.add('animated');
       }
     });
 
-    this.toggleBackgroundImageVisibility();
-  }
-
-  toggleBackgroundImageVisibility(): void {
-    const images = document.querySelectorAll('.background-image');
-    images.forEach(image => {
-      const position = image.getBoundingClientRect();
+    const imageElements = document.querySelectorAll('.animated-img');
+    imageElements.forEach(element => {
+      const position = element.getBoundingClientRect();
       if (position.top < window.innerHeight && position.bottom > 0) {
-        image.classList.remove('hidden');
-        image.classList.add('visible');
-      } else {
-        image.classList.remove('visible');
-        image.classList.add('hidden');
+        element.classList.add('fadeIn');
       }
     });
   }

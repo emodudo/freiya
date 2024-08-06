@@ -1,6 +1,6 @@
-@keyframes slideInFromLeft {
+@keyframes slideInFromRight {
   0% {
-    transform: translateX(-100%);
+    transform: translateX(100%);
     opacity: 0;
   }
   100% {
@@ -9,8 +9,21 @@
   }
 }
 
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .animated {
-  animation: slideInFromLeft 1s ease-out forwards;
+  animation: slideInFromRight 1s ease-out forwards;
+}
+
+.animated-img {
+  animation: fadeIn 1s ease-out forwards;
 }
 
 .hidden {
@@ -19,18 +32,14 @@
 
 .ts {
   text-shadow: rgb(0, 0, 0) 1px 1px 1px;
-} 
-
-img.float-start {
-  max-width: 100%;
-  height: auto;
-  float: left;
 }
 
 .sobre-container {
-  padding: 110px 15px; 
+  min-height: 100vh; 
+  padding-top: 100px; 
+  padding-bottom: 100px; 
 }
 
-.sobre-container h2 {
-  margin-bottom: 100%; 
+.nask {
+  margin-bottom: 50px; 
 }
