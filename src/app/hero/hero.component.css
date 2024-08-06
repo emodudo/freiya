@@ -25,9 +25,6 @@
   height: 100%;
 }
 
-/*---------------------------------------
-VIDEO              
------------------------------------------*/
 .video-wrap {
 z-index: -100;
 overflow: hidden;
@@ -54,6 +51,8 @@ height: 110%;
 object-fit: cover;
 background-size: cover;
 background-position: center;
+transition: opacity 1s ease-in-out;
+opacity: 0;
 filter: blur(4px);
 -webkit-filter: blur(4px);
 }

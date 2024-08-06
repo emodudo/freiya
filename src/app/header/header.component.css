@@ -1,9 +1,10 @@
 .btn-freiya {
+  color: white;
   background-color: transparent; 
 }
 
 .btn-freiya:hover {
-  color: white;
+  color: #ffb758;
   background-color: rgba(0, 0, 0, 30%);
 }
 
@@ -12,14 +13,19 @@
 }
 
 .btn-nav:hover {
-  color: rgba(255, 255, 255, 0.692);
+  color: #ffb758;
 }
 
 
 .nav-freiya {
-  background-color: #6ba5c0;
+  background-color: transparent;
+  transition: background-color 0.3s ease;
+}
+
+.nav-freiya.scrolled {
+  background-color: #005177;
 }
 
 .ts {
-text-shadow: rgb(0, 0, 0) 1px 0 3px;
+  text-shadow: rgb(0, 0, 0) 1px 0 1px;
 }
