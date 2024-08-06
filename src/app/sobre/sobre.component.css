@@ -1,22 +1,36 @@
 @keyframes slideInFromLeft {
-    0% {
-      transform: translateX(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateX(0);
-      opacity: 1;
-    }
-  }
-  
-  .animated {
-    animation: slideInFromLeft 1s ease-out forwards;
-  }
-  
-  .hidden {
+  0% {
+    transform: translateX(-100%);
     opacity: 0;
   }
-
-  .ts {
-    text-shadow: rgb(0, 0, 0) 1px 0 1px;
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
+}
+
+.animated {
+  animation: slideInFromLeft 1s ease-out forwards;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.ts {
+  text-shadow: rgb(0, 0, 0) 1px 1px 1px;
+} 
+
+img.float-start {
+  max-width: 100%;
+  height: auto;
+  float: left;
+}
+
+.sobre-container {
+  padding: 110px 15px; 
+}
+
+.sobre-container h2 {
+  margin-bottom: 100%; 
+}

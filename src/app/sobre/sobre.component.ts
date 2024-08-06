@@ -24,7 +24,22 @@ export class SobreComponent implements OnInit {
       const position = element.getBoundingClientRect();
       if (position.top >= 0 && position.bottom <= window.innerHeight) {
         element.classList.add('animated');
-        element.classList.remove('hidden');
+      }
+    });
+
+    this.toggleBackgroundImageVisibility();
+  }
+
+  toggleBackgroundImageVisibility(): void {
+    const images = document.querySelectorAll('.background-image');
+    images.forEach(image => {
+      const position = image.getBoundingClientRect();
+      if (position.top < window.innerHeight && position.bottom > 0) {
+        image.classList.remove('hidden');
+        image.classList.add('visible');
+      } else {
+        image.classList.remove('visible');
+        image.classList.add('hidden');
       }
     });
   }
