@@ -1,15 +1,25 @@
-  .btn-freiya {
-    background-color: transparent;
-  }
-
-  .btn-freiya:hover {
-    background-color: rgba(0, 0, 0, 50);
-  }
-
-  .nav-freiya {
-    background-color: transparent;
+.btn-freiya {
+  background-color: transparent; 
 }
 
-.fly {
-  position: absolute;
+.btn-freiya:hover {
+  color: white;
+  background-color: rgba(0, 0, 0, 30%);
+}
+
+.btn-nav {
+  color: rgb(255, 255, 255);
+}
+
+.btn-nav:hover {
+  color: rgba(255, 255, 255, 0.692);
+}
+
+
+.nav-freiya {
+  background-color: #6ba5c0;
+}
+
+.ts {
+text-shadow: rgb(0, 0, 0) 1px 0 3px;
 }

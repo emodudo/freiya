@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { HeroComponent } from './hero/hero.component';
 import { SobreComponent } from './sobre/sobre.component';
+import { StreamComponent } from './stream/stream.component';
+import { VideosComponent } from './videos/videos.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     HeroComponent,
-    SobreComponent
+    SobreComponent,
+    StreamComponent,
+    VideosComponent
   ],
   imports: [
     BrowserModule,
