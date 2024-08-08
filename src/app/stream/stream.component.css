@@ -63,3 +63,23 @@
 .btn-freiya:hover .overlay {
     opacity: 1;
 }
+
+.youtube {
+    border-radius: 30px;
+    border: hidden;
+    overflow: hidden;
+}
+
+.youtube-button {
+    font-size: 160px
+}
+
+.youtube-button:hover{
+    color: #ffb758;
+    background-color: rgba(0, 0, 0, 30%);
+}
+
+.margem {
+    padding-top: 80px;
+    padding-bottom: 80px
+}

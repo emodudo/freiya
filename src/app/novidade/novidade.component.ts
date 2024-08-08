@@ -10,7 +10,7 @@ export class NovidadeComponent implements OnInit, AfterViewInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.startCountdown(new Date('2024-09-15T23:59:59'));
+    this.startCountdown(new Date('2025-09-01T23:59:59'));
   }
 
   ngAfterViewInit(): void {
@@ -21,7 +21,7 @@ export class NovidadeComponent implements OnInit, AfterViewInit {
     const observerOptions = {
       root: null,
       rootMargin: '0px',
-      threshold: 0.1 // Quando 10% do elemento está visível
+      threshold: 0.1 
     };
 
     const observer = new IntersectionObserver((entries) => {
@@ -29,7 +29,7 @@ export class NovidadeComponent implements OnInit, AfterViewInit {
         if (entry.isIntersecting) {
           const target = entry.target as HTMLElement;
           target.classList.add('animated');
-          observer.unobserve(target); // Para evitar que a animação seja repetida
+          observer.unobserve(target); 
         }
       });
     }, observerOptions);
