@@ -1,16 +1,46 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, AfterViewInit } from '@angular/core';
 
 @Component({
   selector: 'app-novidade',
   templateUrl: './novidade.component.html',
   styleUrls: ['./novidade.component.css']
 })
-export class NovidadeComponent implements OnInit {
+export class NovidadeComponent implements OnInit, AfterViewInit {
 
   constructor() { }
 
   ngOnInit(): void {
     this.startCountdown(new Date('2024-09-15T23:59:59'));
+  }
+
+  ngAfterViewInit(): void {
+    this.initObservers();
+  }
+
+  initObservers(): void {
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.1 // Quando 10% do elemento está visível
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = entry.target as HTMLElement;
+          target.classList.add('animated');
+          observer.unobserve(target); // Para evitar que a animação seja repetida
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animated-img').forEach(element => {
+      observer.observe(element);
+    });
+
+    document.querySelectorAll('.animated-text').forEach(element => {
+      observer.observe(element);
+    });
   }
 
   startCountdown(targetDate: Date): void {

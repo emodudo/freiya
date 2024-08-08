@@ -23,7 +23,7 @@
 }
 
 .animated-img {
-  animation: fadeIn 1s ease-out forwards;
+  animation: fadeIn 2s ease-out forwards;
 }
 
 .hidden {
